@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>NIEM Ads Analytics Report | September 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
   :root{
     --blue:#1B8BD4; --blue-dk:#0D6FA8; --blue-lt:#EBF5FB;
     --navy:#0D2137; --navy2:#173652;
@@ -18,7 +20,7 @@
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;font-size:15px}
+  body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;font-size:15px}
   img{display:block;max-width:100%}
   a{text-decoration:none}
 
@@ -71,19 +73,19 @@
   .hero-dot2{position:absolute;bottom:-120px;left:10%;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(52,211,153,.15) 0%,rgba(52,211,153,.04) 50%,transparent 70%);pointer-events:none}
   .hero-in{position:relative;z-index:2;max-width:1160px;margin:0 auto;display:flex;align-items:flex-start;justify-content:space-between;gap:48px}
   .hero-lft{flex:1;min-width:0}
-  .hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:16px}
-  .hero-eyebrow strong{color:rgba(255,255,255,.7)}
+  .hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:16px}
+  .hero-eyebrow strong{color:rgba(255,255,255,.9)}
   .hero h1{font-size:42px;font-weight:900;color:#fff;line-height:1.12;margin-bottom:10px;letter-spacing:-1.2px}
-  .hero-sub{font-size:16px;color:rgba(255,255,255,.55);margin-bottom:28px}
+  .hero-sub{font-size:16px;color:rgba(255,255,255,.75);margin-bottom:28px}
   .hero-pills{display:flex;gap:8px;flex-wrap:wrap}
   .hp{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:4px;padding:5px 12px;font-size:12px;color:rgba(255,255,255,.65);font-weight:500}
   .hero-rgt{flex-shrink:0}
   .h-kpi-box{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);overflow:hidden;min-width:340px;backdrop-filter:blur(12px)}
   .hk{background:rgba(255,255,255,.05);padding:22px 24px;text-align:center}
-  .hk-l{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:rgba(255,255,255,.35);font-weight:600;margin-bottom:5px}
+  .hk-l{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:rgba(255,255,255,.65);font-weight:600;margin-bottom:5px}
   .hk-v{font-size:30px;font-weight:900;color:#fff;line-height:1}
   .hk-v.gold{color:#34D399}
-  .hk-s{font-size:11px;color:rgba(255,255,255,.3);margin-top:4px}
+  .hk-s{font-size:11px;color:rgba(255,255,255,.6);margin-top:4px}
 
   /* ===== WRAP ===== */
   .wrap{max-width:1160px;margin:0 auto;padding:36px 24px 72px}
@@ -92,7 +94,7 @@
   .sh{display:flex;align-items:center;gap:10px;padding-bottom:14px;margin:44px 0 20px;border-bottom:2px solid var(--border)}
   .sh:first-child{margin-top:0}
   .sh-bar{width:4px;height:18px;border-radius:2px;flex-shrink:0}
-  .sh h2{font-size:17px;font-weight:700;color:var(--text)}
+  .sh h2{font-size:17px;font-weight:800;color:var(--text);letter-spacing:-.2px}
   .sh-meta{font-size:12px;color:var(--subtle);margin-left:auto;text-align:right;line-height:1.4}
 
   /* ===== DATA FILES CARD ===== */
@@ -123,7 +125,7 @@
   .kc:hover{box-shadow:0 6px 16px rgba(13,33,55,.1);transform:translateY(-2px)}
   .kc-bar{position:absolute;bottom:0;left:0;right:0;height:3px}
   .kc-l{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:var(--subtle);font-weight:600;margin-bottom:10px}
-  .kc-v{font-size:32px;font-weight:900;color:var(--text);line-height:1}
+  .kc-v{font-size:32px;font-weight:800;color:var(--text);line-height:1;letter-spacing:-.5px}
   .kc-v .sup{font-size:16px;font-weight:700;vertical-align:super;line-height:0}
   .kc-s{font-size:12px;color:var(--muted);margin-top:10px}
   .kc.k-blue{background:linear-gradient(135deg,var(--blue),var(--blue-dk));border-color:transparent}
@@ -158,7 +160,7 @@
   .cst-box tbody td{padding:13px 15px;font-size:13px;text-align:center;vertical-align:middle}
   .cst-box tbody td:first-child{text-align:left;padding-left:18px}
   .c-name-cell{display:flex;align-items:center;gap:12px}
-  .c-thumb{width:48px;height:48px;border-radius:6px;object-fit:cover;border:1px solid var(--border);flex-shrink:0}
+  .c-thumb{width:48px;height:48px;border-radius:6px;object-fit:contain;background:var(--bg);border:1px solid var(--border);flex-shrink:0}
   .c-id{font-size:13px;font-weight:700;color:var(--text)}
   .c-angle{font-size:11px;color:var(--muted);margin-top:2px}
   .rk-dot{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;font-size:12px;font-weight:700;color:#fff}
@@ -172,32 +174,63 @@
   .cd:hover{box-shadow:0 8px 24px rgba(13,33,55,.11);transform:translateY(-3px)}
   .cd-top-bar{height:4px;width:100%}
   .cd-img-wrap{position:relative;overflow:hidden;background:#F0F4F8}
-  .cd-img{width:100%;object-fit:contain;max-height:360px;display:block}
+  .cd-img{width:100%;height:auto;display:block}
   .cd-badge{position:absolute;top:12px;left:12px;padding:4px 11px;border-radius:4px;font-size:11px;font-weight:700;color:#fff;letter-spacing:.4px}
   .cd-plats{position:absolute;top:12px;right:12px;display:flex;gap:5px}
   .plat-tag{display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.92);border-radius:4px;padding:4px 8px;font-size:11px;font-weight:600;color:#374151;backdrop-filter:blur(4px)}
   .cd-body{padding:18px 20px}
-  .cd-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}
-  .cd-id{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--subtle)}
-  .cd-angle-tag{font-size:10px;font-weight:600;padding:3px 9px;border-radius:4px;background:var(--blue-lt);color:var(--blue-dk)}
-  .cd-hl{font-size:14px;font-weight:700;color:var(--text);line-height:1.45;margin-bottom:5px}
-  .cd-cta{font-size:11px;font-weight:700;color:var(--blue);letter-spacing:.4px}
+  .cd-meta{display:flex;align-items:center;justify-content:flex-end;margin-bottom:8px}
+  .cd-id{display:none}
+  .cd-angle-tag{font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;color:#fff;letter-spacing:.2px}
+  .cd-hl{font-size:16px;font-weight:800;color:var(--text);line-height:1.38;margin-bottom:8px}
+  .cd-cta{font-size:12px;font-weight:800;color:var(--blue);letter-spacing:.8px;text-transform:uppercase}
   .cd-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:16px}
-  .cs{background:var(--bg);border:1px solid var(--border2);border-radius:6px;padding:12px 10px;text-align:center}
-  .cs-l{font-size:9px;text-transform:uppercase;letter-spacing:.8px;color:var(--subtle);font-weight:600;margin-bottom:5px}
-  .cs-v{font-size:18px;font-weight:800;color:var(--text)}
-  .cs-s{font-size:10px;color:var(--subtle);margin-top:2px}
+  .cs{background:var(--bg);border:1px solid var(--border2);border-radius:6px;padding:16px 10px;text-align:center}
+  .cs-l{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:700;margin-bottom:6px}
+  .cs-v{font-size:22px;font-weight:900;color:var(--text)}
+  .cs-s{font-size:11px;color:var(--subtle);margin-top:3px}
   .cd-foot{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;background:var(--bg);border-top:1px solid var(--border2);font-size:12px;color:var(--muted)}
   .cd-foot strong{color:var(--text)}
 
+  /* ===== PLATFORM SPLIT ===== */
+  .ps-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:18px 24px;margin-bottom:36px;box-shadow:0 1px 4px rgba(13,33,55,.05)}
+  .ps-outer{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .ps-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--subtle);flex-shrink:0}
+  .ps-inner{display:flex;align-items:center;gap:20px;flex:1;justify-content:center}
+  .ps-plat{display:flex;align-items:center;gap:10px;flex-shrink:0}
+  .ps-plat-num{font-size:22px;font-weight:900;line-height:1}
+  .ps-plat-sub{font-size:11px;color:var(--muted);margin-top:2px}
+  .ps-bar-wrap{flex:1;min-width:100px;max-width:260px}
+  .ps-bar{height:8px;background:var(--border2);border-radius:4px;overflow:hidden;display:flex}
+  .ps-bar-fb{height:100%;background:#1877F2;border-radius:4px 0 0 4px}
+  .ps-bar-ig{height:100%;background:linear-gradient(90deg,#d6249f,#285AEB);border-radius:0 4px 4px 0}
+  .ps-bar-labels{display:flex;justify-content:space-between;margin-top:5px;font-size:10px;color:var(--subtle)}
+  .ps-note{font-size:11px;color:var(--subtle);text-align:right;line-height:1.6;flex-shrink:0}
+
+  @media(max-width:640px){
+    .ps-card{padding:14px 16px}
+    .ps-outer{flex-direction:column;align-items:stretch;gap:12px}
+    .ps-label{text-align:center}
+    .ps-inner{gap:12px}
+    .ps-bar-wrap{min-width:60px}
+    .ps-note{text-align:center}
+    .ps-plat-num{font-size:20px}
+    .ps-plat-sub{font-size:10px}
+  }
+
+  @media(max-width:400px){
+    .ps-inner{gap:8px}
+    .ps-plat svg{width:18px;height:18px}
+  }
+
   /* ===== FOOTER ===== */
-  .ftr{background:var(--navy);padding:26px 44px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .ftr{background:linear-gradient(135deg,#020C1B 0%,#071C38 60%,#0D2137 100%);padding:26px 44px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
   .ftr-l{display:flex;align-items:center;gap:14px}
-  .ftr-l img{height:30px;filter:brightness(0) invert(1);opacity:.5}
-  .ftr-l span{font-size:12px;color:rgba(255,255,255,.3)}
-  .ftr-c{font-size:12px;color:rgba(255,255,255,.25);text-align:center;flex:1}
-  .ftr-r{font-size:13px;color:rgba(255,255,255,.4);font-weight:600;text-align:right}
-  .ftr-r strong{color:var(--blue)}
+  .ftr-l img{height:30px;filter:brightness(0) invert(1);opacity:.85}
+  .ftr-l span{font-size:12px;color:rgba(255,255,255,.65)}
+  .ftr-c{font-size:12px;color:rgba(255,255,255,.5);text-align:center;flex:1}
+  .ftr-r{font-size:14px;color:rgba(255,255,255,.75);font-weight:700;text-align:right}
+  .ftr-r strong{color:#4DB8FF;font-size:15px}
 
   /* ===== RESPONSIVE - TABLET ===== */
   @media(max-width:960px){
@@ -211,8 +244,8 @@
     .cd-grid{grid-template-columns:repeat(2,1fr)}
     .data-card{grid-template-columns:1fr}
     .dc-cell:first-child{border-right:none;border-bottom:1px solid var(--border)}
-    .sheet-card{flex-direction:column;align-items:flex-start;gap:14px}
-    .sc-btn{width:100%;justify-content:center}
+
+
   }
 
   /* ===== RESPONSIVE - MOBILE ===== */
@@ -248,11 +281,11 @@
     .fw7{font-size:13px}
 
     .cd-grid{grid-template-columns:1fr;gap:14px}
-    .cd-img{max-height:280px}
+    .cd-img{width:100%;height:auto}
     .cd-body{padding:14px 16px}
-    .cd-hl{font-size:13px}
+    .cd-hl{font-size:14px}
     .cd-stats{grid-template-columns:repeat(2,1fr);gap:7px}
-    .cs{padding:10px 8px} .cs-v{font-size:16px} .cs-l{font-size:9px}
+    .cs{padding:12px 8px} .cs-v{font-size:19px} .cs-l{font-size:9px}
     .cd-foot{padding:9px 16px;font-size:11px}
 
     .ftr{padding:18px 16px;flex-direction:column;gap:10px;text-align:center}
@@ -311,8 +344,7 @@
         <span class="hp">Platform: Meta</span>
         <span class="hp">Lead Generation</span>
         <span class="hp">Instant Form</span>
-        <span class="hp">30-Day Campaign</span>
-        <span class="hp">6 Creatives Tested</span>
+<span class="hp">6 Creatives Tested</span>
       </div>
     </div>
     <div class="hero-rgt">
@@ -359,7 +391,7 @@
   <div class="sh">
     <div class="sh-bar" style="background:var(--blue)"></div>
     <h2>Campaign Overview</h2>
-    <span class="sh-meta">September 2026 &nbsp; 30-day campaign</span>
+    <span class="sh-meta">September 2026</span>
   </div>
 
   <div class="kpi-grid">
@@ -376,33 +408,33 @@
   </div>
 
   <!-- PLATFORM SPLIT -->
-  <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:18px 24px;margin-bottom:36px;box-shadow:0 1px 4px rgba(13,33,55,.05)">
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
-      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--subtle)">Platform Split</div>
-      <div style="display:flex;align-items:center;gap:24px;flex:1;justify-content:center;flex-wrap:wrap">
-        <div style="display:flex;align-items:center;gap:10px">
+  <div class="ps-card">
+    <div class="ps-outer">
+      <div class="ps-label">Platform Split</div>
+      <div class="ps-inner">
+        <div class="ps-plat">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           <div>
-            <div style="font-size:22px;font-weight:900;color:#1877F2;line-height:1">46</div>
-            <div style="font-size:11px;color:var(--muted);margin-top:2px">Facebook leads &nbsp;<strong style="color:#1877F2">46%</strong></div>
+            <div class="ps-plat-num" style="color:#1877F2">46</div>
+            <div class="ps-plat-sub">Facebook &nbsp;<strong style="color:#1877F2">46%</strong></div>
           </div>
         </div>
-        <div style="flex:1;max-width:280px;min-width:120px">
-          <div style="height:8px;background:var(--border2);border-radius:4px;overflow:hidden;display:flex">
-            <div style="width:46%;background:#1877F2;border-radius:4px 0 0 4px"></div>
-            <div style="width:54%;background:linear-gradient(90deg,#d6249f,#285AEB);border-radius:0 4px 4px 0"></div>
+        <div class="ps-bar-wrap">
+          <div class="ps-bar">
+            <div class="ps-bar-fb" style="width:46%"></div>
+            <div class="ps-bar-ig" style="width:54%"></div>
           </div>
-          <div style="display:flex;justify-content:space-between;margin-top:5px;font-size:10px;color:var(--subtle)"><span>46%</span><span>54%</span></div>
+          <div class="ps-bar-labels"><span>46%</span><span>54%</span></div>
         </div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <div style="text-align:right">
-            <div style="font-size:22px;font-weight:900;line-height:1;background:linear-gradient(135deg,#d6249f,#285AEB);-webkit-background-clip:text;-webkit-text-fill-color:transparent">55</div>
-            <div style="font-size:11px;color:var(--muted);margin-top:2px"><strong style="color:#d6249f">54%</strong> &nbsp;Instagram leads</div>
+        <div class="ps-plat">
+          <div>
+            <div class="ps-plat-num" style="background:linear-gradient(135deg,#d6249f,#285AEB);-webkit-background-clip:text;-webkit-text-fill-color:transparent">55</div>
+            <div class="ps-plat-sub"><strong style="color:#d6249f">54%</strong> &nbsp;Instagram</div>
           </div>
           <svg width="22" height="22" viewBox="0 0 24 24"><defs><linearGradient id="igs2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igs2)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
         </div>
       </div>
-      <div style="font-size:11px;color:var(--subtle);text-align:right;line-height:1.6">101 total leads<br>verified from form data</div>
+      <div class="ps-note">101 total leads<br>verified from form data</div>
     </div>
   </div>
 
@@ -536,12 +568,11 @@
         <div class="cd-plats">
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24"><defs><linearGradient id="igs" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igs)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
-        </div>
-      </div>
+        </div></div>
       <div class="cd-body">
         <div class="cd-meta">
           <div class="cd-id">Creative 2</div>
-          <div class="cd-angle-tag">Urgency + Wisdom</div>
+          <div class="cd-angle-tag" style="background:#1B8BD4">Urgency + Wisdom</div>
         </div>
         <div class="cd-hl">"The Best Time to Raise is Before You Need the Money."</div>
         <div class="cd-cta">APPLY NOW</div>
@@ -565,12 +596,11 @@
         <div class="cd-plats">
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24"><defs><linearGradient id="igs" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igs)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
-        </div>
-      </div>
+        </div></div>
       <div class="cd-body">
         <div class="cd-meta">
           <div class="cd-id">Creative 3</div>
-          <div class="cd-angle-tag">Urgency, Dual Proof</div>
+          <div class="cd-angle-tag" style="background:#0D6FA8">Urgency, Dual Proof</div>
         </div>
         <div class="cd-hl">"The Best Time to Raise is Before You Need the Money."</div>
         <div class="cd-cta">APPLY NOW</div>
@@ -594,12 +624,11 @@
         <div class="cd-plats">
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24"><defs><linearGradient id="igs" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igs)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
-        </div>
-      </div>
+        </div></div>
       <div class="cd-body">
         <div class="cd-meta">
           <div class="cd-id">Creative 1</div>
-          <div class="cd-angle-tag">Direct Offer</div>
+          <div class="cd-angle-tag" style="background:#2B7A4B">Direct Offer</div>
         </div>
         <div class="cd-hl">"NIEM Backs Early-Stage B2B Manufacturing Startups with up to Rs 50 Lakh Funding."</div>
         <div class="cd-cta">GET SHORTLISTED</div>
@@ -623,12 +652,11 @@
         <div class="cd-plats">
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24"><defs><linearGradient id="igs" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igs)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
-        </div>
-      </div>
+        </div></div>
       <div class="cd-body">
         <div class="cd-meta">
           <div class="cd-id">Creative 6</div>
-          <div class="cd-angle-tag">Investor POV</div>
+          <div class="cd-angle-tag" style="background:#C8A020">Investor POV</div>
         </div>
         <div class="cd-hl">"We're Looking to Invest Early."</div>
         <div class="cd-cta">JOIN THE SHORTLIST</div>
@@ -652,12 +680,11 @@
         <div class="cd-plats">
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24"><defs><linearGradient id="igs" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igs)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
-        </div>
-      </div>
+        </div></div>
       <div class="cd-body">
         <div class="cd-meta">
           <div class="cd-id">Creative 5</div>
-          <div class="cd-angle-tag">FOMO v1</div>
+          <div class="cd-angle-tag" style="background:#9CA3AF">FOMO v1</div>
         </div>
         <div class="cd-hl">"Your Competitor May Get the Pilot First."</div>
         <div class="cd-cta">APPLY NOW</div>
@@ -681,12 +708,11 @@
         <div class="cd-plats">
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></div>
           <div class="plat-tag"><svg width="15" height="15" viewBox="0 0 24 24"><defs><linearGradient id="igs" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949"/><stop offset="50%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285AEB"/></linearGradient></defs><path fill="url(#igs)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
-        </div>
-      </div>
+        </div></div>
       <div class="cd-body">
         <div class="cd-meta">
           <div class="cd-id">Creative 4</div>
-          <div class="cd-angle-tag">FOMO v2</div>
+          <div class="cd-angle-tag" style="background:#9CA3AF">FOMO v2</div>
         </div>
         <div class="cd-hl">"Your Competitor May Get the Pilot First."</div>
         <div class="cd-cta">APPLY NOW</div>
